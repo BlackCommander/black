@@ -1,0 +1,64 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font-size:100%;
+	font-family: "微软雅黑";
+}
+
+header{
+	position: relative;
+	top:0px;
+	float: top;
+	background-color:#4876FF;
+	height:100%;
+	width: 100%;
+	line-height: 100%;
+	text-align:center;
+	font-size:2em;
+}
+	
+section{
+	width: 100%;
+	height:5em;
+	text-align:center;
+}
+
+#logout{
+	border-style:hidden;
+	margin:5px,10px;
+}
+
+button{
+	border-style:hidden;
+	padding:2px;
+}
+
+label{
+	width: 25%;
+	height:100%;
+	text-align: justify;
+}
+
+form{
+	width:100%;
+	height:100%;
+	border-style:hidden;
+}
+
+input{
+	width:50%;
+	height:100%;
+}
+
+ol{
+	position: relative;
+	border-style: hidden;
+	margin:0 auto;
+	width:100%;
+	height:100%;
+	text-align:left;
+	font-size:0.75em;
+}
