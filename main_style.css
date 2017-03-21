@@ -17,6 +17,7 @@ header{
 	width: 100%;
 	line-height: 100%;
 	text-align:center;
+	white-space:nowrap;
 }
 	
 section{
