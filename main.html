@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=2.0"/>
+		<title> 广西联通语音、流量充值站</title>
+		<!--<base href = "http://mysite.com/"/> -->
+		<link rel = "stylesheet" type = "text/css" href = "./main_style.css"/>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+		<!-- <script type = "text/javascript" src = "/js/main.js"/> -->
+	</head>
+	<body>
+	<div class = "container-fluid">
+		<header class = "text-center">
+			<h1>广西联通语音、流量充值站</h1>
+			<!--  
+			<marquee>广西联通流量粉丝包1元100M，语音粉丝包5元100分钟！</marquee>
+			-->
+		</header>
+		
+		<div id = "logout" class = "text-right">
+			<button type = "button" class = "btn btn-danger" onclick = "logout()">退出登录</button>
+		</div>
+		
+		<section class = "text-center">
+			<p id = "showhint"></p>
+		</section>
+		
+		<form class = "text-center">
+		<div class = "input">
+			<div id = "mobile"> 
+				<label>手机号</label>：
+				<input type = "text" placeholder = "请输入您要充值的号码"  name = "mobile" maxlength = 11 onblur="check_phone_num()" />
+			</div>
+			
+			<div id ="data_plan">
+				<label>数据流量</label>：
+				<input type = "text" placeholder = "请输入您要充值的流量数量（M）"  name = "data_plan" maxlength = 4 onblur="check_data_plan()" />
+			</div>
+			
+			<div id = "call_plan">
+				<label>语音通话</label>：
+				<input type = "text" placeholder = "请输入您要充值的语音通话时长（分钟）" name = "call_plan" maxlength = 4 onblur="check_call_plan()" />
+			</div>
+			
+			<div id = "permition">
+				<label> 口令</label>：
+				<input type = "password" placeholder = "请输入您的授权口令" name = "permition" maxlength = 12 onblur="check_permition()" />
+			</div>
+			
+			<div id = "submit">
+				<button class = "btn btn-primary" type = "submit" onclick = "recharge()" >充值</button>
+			</div>
+		</div>
+		
+		</form>
+		
+		<hr/>
+		<div id = "notice"  >
+			<h3 class = "text-center">声明</h3>
+			<ol>
+				<li>因联通业务安排，本充值站仅能为广西联通部分号码充值，部分4G卡如“大王卡”、“放心卡”暂时无法在本站充值，敬请谅解。</li>
+				<li>本站充值的流量为区内流量，仅限广西区内使用，且仅限充值当月使用，月末清零，敬请知悉。</li>
+				<li>本站充值的语音通话仅限广西区内使用，可以拨打全国三大运营商除港澳台以外其他号码，但不可漫游出省，且仅限充值当月使用，月末清零，敬请知悉。</li>
+			</ol>
+		</div>
+		
+		<hr/>
+		<footer class = "text-center">
+		<p>Black done</p>
+		</footer>
+	</div>
+	</body>
+</html>
+		
+		
+		
+		
+		
+		
+			
+			
+			
